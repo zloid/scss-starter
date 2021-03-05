@@ -1,0 +1,85 @@
+.middle-content {
+    @include media(">=desktop") {
+      margin: -160px 0 0 370px;
+      position: absolute !important;
+    }
+    @include media("<desktop") {
+      margin-left: 8%;
+      margin-right: 8%;
+      padding: 0 0px 40px 0;
+    }
+    h2 {
+      font-size: 63px;
+      line-height: 68px;
+      color: #1c3e95;
+      font-weight: 700;
+      font-family: "Quicksand";
+  
+      @include media(">=desktop") {
+        margin-top: 60px;
+      }
+      @include media("<desktop") {
+        font-size: 33px;
+        line-height: 38px;
+      }
+    }
+    span {
+      display: block;
+      font-size: 34px;
+      line-height: 40px;
+      color: #1c3e95;
+      font-weight: 700;
+      font-family: "Quicksand";
+  
+      @include media(">=desktop") {
+        margin-top: 40px;
+      }
+      @include media("<desktop") {
+        margin-bottom: 10px;
+      }
+    }
+    p.bold {
+      font-size: 17px;
+      line-height: 28px;
+      color: #161616;
+      font-weight: 700;
+      font-family: "Lato";
+  
+      @include media(">=desktop") {
+        margin-top: 20px;
+      }
+    }
+    p {
+      font-size: 17px;
+      line-height: 28px;
+      color: #161616;
+      font-weight: 500;
+      font-family: "Lato";
+  
+      @include media(">=desktop") {
+        width: 792px;
+      }
+    }
+    button {
+      width: 280px;
+      height: 56px;
+      border-radius: 10px;
+      background: $orange-custom;
+      border: none;
+      font-size: 17px;
+      color: #fff;
+      line-height: 21px;
+      font-weight: 700;
+      font-family: "Quicksand";
+      text-align: center;
+      margin-top: 45px;
+  
+      @include media("<desktop") {
+        width: 205px;
+        height: 48px;
+        margin-top: 10px;
+        padding: 10px;
+      }
+    }
+  } /* end .middle-content*/
+  

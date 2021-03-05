@@ -1,0 +1,48 @@
+#main-footer {
+  background-color: #1c3e95;
+  border: 1px solid #707070;
+
+  @include media(">=desktop") {
+    height: 315px;
+    padding: 60px 0 0 370px;
+  }
+  .links {
+    @include media(">=desktop") {
+      width: 1240px;
+    }
+    @include media("<desktop") {
+      margin-left: 8%;
+      padding: 20px 20px 20px 0;
+    }
+  }
+  .col-sm {
+    @include media("<desktop") {
+      padding: 0px 20px 20px 0 !important;
+    }
+  }
+  h3 {
+    font-size: 20px;
+    line-height: 26px;
+    color: #fff;
+    font-weight: 700;
+    font-family: "Quicksand";
+
+    @include media("<desktop") {
+      color: rgb(173, 173, 173);
+    }
+  }
+  a {
+    display: block;
+    width: fit-content;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    font-family: "Lato";
+
+    &:hover {
+      color: $orange-custom;
+    }
+  }
+} /* end #main-footer */

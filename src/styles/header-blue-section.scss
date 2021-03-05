@@ -1,0 +1,43 @@
+
+.header-blue-section {
+    background-color: rgba(79, 101, 163, 0.85);
+    width: 100%;
+  
+    @include media(">=desktop") {
+      height: 258px;
+    }
+    h1 {
+      color: $orange-custom;
+      font-size: 52px;
+      line-height: 56px;
+      font-weight: 700;
+      font-family: "Quicksand";
+  
+      @include media(">=desktop") {
+        margin: 70px 0 0 370px;
+      }
+      @include media("<desktop") {
+        font-size: 32px;
+        line-height: 36px;
+        margin-left: 8%;
+        padding: 20px 20px 0 0;
+      }
+    }
+    p {
+      font-size: 30px;
+      line-height: 36px;
+      color: #fff;
+      font-weight: 700;
+      font-family: "Quicksand";
+  
+      @include media(">=desktop") {
+        margin: 0 0 0 370px;
+        width: 590px;
+      }
+      @include media("<desktop") {
+        margin-left: 8%;
+        padding-right: 20px;
+      }
+    }
+  }
+  
