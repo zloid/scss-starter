@@ -5,18 +5,25 @@
   padding: 40px;
   margin: 0 0 64px 0;
 
-  @include media(">=desktop") {
-    width: 489px;
-    position: absolute;
-    right: 360px;
-    top: 180px;
-  }
   @include media("<desktop") {
     padding: 20px;
     max-width: 500px;
     margin: 20px auto;
     border: 1px solid #ccc;
   }
+  @include media(">=desktop") {
+    width: 489px;
+    position: absolute;
+    right: 360px;
+    top: 180px;
+  }
+  @include media(">=desktop-large") {
+    width: 489px;
+    position: absolute;
+    right: 560px;
+    top: 180px;
+  }
+ 
   h2 {
     font-size: 24px;
     line-height: 26px;

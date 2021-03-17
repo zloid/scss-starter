@@ -1,12 +1,19 @@
-.middle-content {
-    @include media(">=desktop") {
-      margin: -160px 0 0 370px;
-      position: absolute !important;
-    }
+.middle-content {    
     @include media("<desktop") {
       margin-left: 8%;
       margin-right: 8%;
       padding: 0 0px 40px 0;
+    }
+    @include media(">=desktop") {
+      // margin: -160px 0 0 370px;
+      margin: -160px 0 0 0;
+      position: absolute !important;
+    }
+    @include media(">=desktop-large") {
+      margin: -160px 0 0 0;
+      // margin-left: 36%;
+      // margin-right: 28%;
+      position: absolute !important;
     }
     h2 {
       font-size: 63px;
