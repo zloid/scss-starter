@@ -1,6 +1,6 @@
 require('normalize.css/normalize.css');
 require('./styles/index.scss');
-
+/* 
 document.addEventListener("DOMContentLoaded", () => {
 
     const pluginsTriggerElement = document.getElementById('plugins-trigger');
@@ -12,3 +12,4 @@ document.addEventListener("DOMContentLoaded", () => {
         pluginsElement.classList.toggle(pluginsVisibleClass);
     }
 });
+ */
