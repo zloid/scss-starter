@@ -15,13 +15,13 @@
     width: 489px;
     position: absolute;
     right: 360px;
-    top: 120px;
+    top: 136px;
   }
   @include media(">=desktop-large") {
     width: 489px;
     position: absolute;
     right: 560px;
-    top: 120px;
+    top: 136px;
   }
  
   h2 {
@@ -104,19 +104,20 @@
       @include media(">=desktop") {
         margin-left: 100px;
       }
-    }
-
-    p {
-      @include media(">=desktop") {
-        width: 378px;
-        height: 142px;
-        font-size: 13px;
-        line-height: 18px;
-        color: #626262;
-        font-weight: 300;
-        font-family: "Lato";
-        display: inline-block;
-      }
-    }
+    } 
   }
 } /* end .contact-form */
+
+
+.contact-form__checkbox-text {
+  @include media(">=desktop") {
+    width: 378px;
+    height: 142px;
+    font-size: 17px;
+    line-height: 18px;
+    color: #626262;
+    font-weight: 300;
+    font-family: "Lato";
+    display: inline-block;
+  }
+}
